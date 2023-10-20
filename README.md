@@ -12,10 +12,10 @@
 	$ kubectl get hpa
 	$ kubectl get pods
 
-# Step-4 : Increase Load with busybox. <br>
+# Step-5 : Increase Load with busybox. <br>
   `$ kubectl run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://hpa-demo-deployment; done"`
 
-# Step-5 : Monitor HPA Events.
+# Step-6 : Monitor HPA Events.
 	$ Kubectl get hpa
 	$ kubectl get pods
 
